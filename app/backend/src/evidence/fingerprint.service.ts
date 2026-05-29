@@ -83,7 +83,7 @@ export class FingerprintService {
    * Calculate Levenshtein distance between two strings
    */
   private levenshteinDistance(str1: string, str2: string): number {
-    const matrix = [];
+    const matrix: number[][] = [];
 
     for (let i = 0; i <= str2.length; i++) {
       matrix[i] = [i];
